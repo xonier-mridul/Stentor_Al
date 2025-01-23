@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ex-coders">
+    <meta name="description" content="Stentor AI - Innovate Without Limits, Grow Without Costs.">
+    <!-- ======== Page title ============ -->
+    <title>Stentor AI - Innovate Without Limits, Grow Without Costs.</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="background" id="background"></div>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <canvas></canvas>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-lg-block">
+
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">
+                                        88 Queens Quay West, Suite 2500,RBC WaterPark Place,Toronto, M5J 0B8, CAN
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:info@stentor.ai"><span
+                                            class="mailto:info@stentor.ai">info@stentor.ai</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="#" class="theme-btn text-center">
+                                <span>get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-x"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header>
+        <div  class="header-top-section top-style-3">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <ul class="contact-list mb-0"> 
+                        <li class="">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:info@stentor.ai" class="link">info@stentor.ai</a>
+                        </li>
+
+                    </ul>
+                    <div class="top-right">
+                        <div class="gt-social style2">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fa fa-x"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #ffffff; z-index: 20;" id="header-sticky" class="header-3">
+            <div class="plane-shape">
+                <img src="assets/img/plane.png" alt="shape-img">
+            </div>
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/img/logo.png" alt="logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="active menu-thumb">
+                                                <a href="index.html">
+                                                    Home
+                                                </a>
+
+                                            </li>
+
+                                            <li>
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Capabilities
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                                <ul class="submenu has-homemenu">
+                                                    <li>
+                                                        <div class="homemenu-items">
+                                                            <div class="homemenu w-290px">
+                                                                <div class="homemenu-content">
+                                                                    <div class="maindiv">
+                                                                        <i class="fa fa-code"></i>
+                                                                        <div class="d-grid">
+                                                                            <a href="software-development.html">
+                                                                                <p class="title"><b>Software
+                                                                                        Development</b></p>
+                                                                                <p class="designation">Creating
+                                                                                    customized software solutions to
+                                                                                    meet client-specific business needs.
+                                                                                </p>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="maindiv">
+                                                                        <i class="fa fa-users"></i>
+                                                                        <div class="d-grid">
+                                                                            <a href="staff.html">
+                                                                                <p class="title"><b> Staff
+                                                                                        Augmentation</b></p>
+                                                                                <p class="designation">Providing skilled
+                                                                                    professionals to supplement existing
+                                                                                    teams for project success.
+                                                                                </p>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="maindiv">
+                                                                        <i class="fas fa-analytics"></i>
+                                                                        <div class="d-grid">
+                                                                            <a href="data-analytics.html">
+                                                                                <p class="title"><b>Data Analytics</b>
+                                                                                </p>
+                                                                                <p class="designation">Transforming data
+                                                                                    into actionable insights for
+                                                                                    informed decision-making.
+                                                                                </p>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="homemenu w-290px">
+                                                                <div class="homemenu-content">
+                                                                    <div class="maindiv">
+                                                                        <i class="fa-solid fa-microchip-ai"></i>
+                                                                        <div class="d-grid">
+                                                                            <a href="ai.html">
+                                                                                <p class="title"><b>AI Integration
+                                                                                        (Enterprise AI Solutions)</b>
+                                                                                </p>
+                                                                                <p class="designation">Implementing AI
+                                                                                    to optimize enterprise processes and
+                                                                                    drive efficiency.
+                                                                                </p>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="maindiv">
+                                                                        <i class="fa fa-robot-astromech"></i>
+                                                                        <div class="d-grid">
+                                                                            <a href="automation.html">
+                                                                                <p class="title"><b>Automation</b></p>
+                                                                                <p class="designation">Streamlining
+                                                                                    repetitive tasks to improve
+                                                                                    productivity and reduce human error.
+                                                                                </p>
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="homemenu">
+                                                                <div class="homemenu-content">
+                                                                    <img src="assets/img/hero/header1.png"
+                                                                        class="h-341px" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <!-- <ul class="submenu">
+                                                <li><a href="#">Software & App Development</a></li>
+                                                <li><a href="#">Staff Augmentation</a></li>
+                                                <li><a href="#">Data Analytics</a></li>
+                                                <li><a href="#">AI Integration</a></li>
+                                                <li><a href="#">Automation Solutions</a></li>
+
+                                            </ul> -->
+                                            </li>
+                                            <li>
+                                                <a href="case-studies.html">Case Studies</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Blog</a>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="header-button">
+                                <a href="contact.html" class="theme-btn bg-white">
+                                    <span>
+                                        Contact Us
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-lg-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Start -->
+    <!--<< Breadcrumb Section Start >>-->
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/breadcrumb.jpg'); z-index: 2;">
+        <div class="border-shape">
+            <img src="assets/img/element.png" alt="shape-img">
+        </div>
+        <div class="line-shape">
+            <img src="assets/img/line-element.png" alt="shape-img">
+        </div>
+        <div class="container">
+            <div class="page-heading">
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">Case Studies</h1>
+                <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Case Studies
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- About Section Start -->
+    <section class="about-section section-padding fix bg-cover"
+        style="background-image: url('assets/img/service/service-bg-2.jpg');">
+        <div class="container">
+            <div class="about-wrapper style-2">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-image-items">
+                            <div style="z-index: 2;" class="circle-shape">
+                                <img src="assets/img/about/circle.png" alt="shape-img">
+                            </div>
+                             
+                            <div style="z-index: 2; " class="about-image-1 bg-cover wow fadeInLeft" data-wow-delay=".3s"
+                                style="background-image: url('assets/img/about/03.png');">
+                                <div class="about-image-2 wow fadeInUp" data-wow-delay=".5s">
+                                    <img src="assets/img/about/04.jpg" alt="about-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="about-content">
+                            <div class="section-title mb-3 mxw-650">
+                                <div class="subtitle"> <img src="assets/img/icon/arrowLeft.svg" alt="icon"> 
+                                    <span>Case Studies
+                                    </span><img src="assets/img/icon/arrowRight.svg" alt="icon"></div>
+                                <h2 class="title"> Case Studies</h2>
+                            </div>
+                            <p style="color:#ffffff; z-index: 2 ; position: relative;" class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                                Welcome to Stentor AI's Case Studies page, where success stories come to life. Here, we showcase how our "No Net Cost" solutions have transformed businesses across industries by delivering measurable results, streamlining operations, and driving innovation.
+                            </p>
+                             
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="Project-details-section fix section-padding">
+        <div class="container">
+            <div class="project-details-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div style="z-index: 2; position: relative;" class="project-details-items">
+                            <div class="details-image">
+                                <img src="assets/img/project/details.jpg" alt="img">
+                            </div>
+                            <div class="row g-4 justify-content-between">
+                                <div class="col-lg-7">
+                                    <div class="details-content pt-5">
+                                        <h3 style="color: #ffffff;">Transforming Customer Service with AI-Powered Chatbots   </h3>
+                                        <p style="color: #ffffff;">Enhance customer experiences and streamline support with AI-powered chatbots, delivering instant, personalized assistance around the clock.                                        </p>
+                                        <p style="color: #ffffff;"><b>Challenge: </b></p>
+                                        <p style="color: #ffffff;">Managing high inquiry volumes with long response times. </p>
+                                        <p style="color: #ffffff;"><b>Solution: </b></p>
+                                        <p style="color: #ffffff;">Implementation of AI-driven chatbots to handle customer queries.                                        </p>
+                                        <p style="color: #ffffff;"><b>Results: </b></p>
+                                        <ul style="color: #ffffff;" class="text-dark">
+                                            <li style="color: #ffffff;">60% reduction in response times </li>
+                                            <li style="color: #ffffff;">40% increase in customer satisfaction</li>
+                                            <li style="color: #ffffff;">Significant cost savings in support operations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="project-catagory">
+                                        <h3>Project Info: </h3>
+                                        <ul>
+                                            <li>
+                                                Client:
+                                                <span>Leading E-commerce Platform</span>
+                                            </li>
+                                            <li>
+                                                Category:
+                                                <span>IT Development
+                                                </span>
+                                            </li>
+                                            
+                                            <li>
+                                                Location:
+                                                <span> Canada</span>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- News Section Start -->
+    <section class="news-section-4 fix">
+        <div class="container">
+            <div style="z-index: 2; position: relative;" class="single-sidebar-widget1"> 
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-sidebar-widget">                            
+                            <div class="search-widget">
+                                <form action="#">
+                                    <input type="text" placeholder="Search here">
+                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control1">
+                            <option value="0">Short by Industry</option>
+                            <option value="1">AI Innovation</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control1">
+                            <option value="0">Short by Service Type</option>
+                            <option value="1">AI Innovation</option>
+                            <option value="1">Software Development</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div style="z-index: 2; position: relative;" class="news-card-items style-2 mt-0 pb-0">
+                        <div class="news-image">
+                            <img src="assets/img/case-study/1.jpg" alt="news-img">
+                            
+                        </div>
+                        <div class="news-content"> 
+                            <h3>
+                                <a href="#test-popup" class="open-popup-link">
+                                Real Businesses, Real Results </a>
+                            </h3>
+                            <p>At Stentor AI, we are revolutionizing industries with our innovative "No Net Cost" solutions, designed to maximize results without straining budgets. </p>
+                            <a href="#test-popup" class="open-popup-link theme-btn-2 mt-3">
+                                read More
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div style="z-index: 2; position: relative;" class="news-card-items style-2 mt-0 pb-0">
+                        <div class="news-image">
+                            <img src="assets/img/case-study/2.jpg" alt="news-img">
+                            
+                        </div>
+                        <div class="news-content"> 
+                            <h3>
+                                <a href="#test-popup" class="open-popup-link">
+                                Real Businesses, Real Results </a>
+                            </h3>
+                            <p>At Stentor AI, we are revolutionizing industries with our innovative "No Net Cost" solutions, designed to maximize results without straining budgets. </p>
+                            <a href="#test-popup" class="open-popup-link theme-btn-2 mt-3">
+                                read More
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div style="z-index: 2; position: relative;" class="news-card-items style-2 mt-0 pb-0">
+                        <div class="news-image">
+                            <img src="assets/img/case-study/3.jpg" alt="news-img">
+                            
+                        </div>
+                        <div class="news-content"> 
+                            <h3>
+                                <a href="#test-popup" class="open-popup-link">
+                                Real Businesses, Real Results </a>
+                            </h3>
+                            <p>At Stentor AI, we are revolutionizing industries with our innovative "No Net Cost" solutions, designed to maximize results without straining budgets. </p>
+                            <a href="#test-popup" class="open-popup-link theme-btn-2 mt-3">
+                                read More
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="page-nav-wrap pt-5 text-center wow fadeInUp" data-wow-delay=".3s">
+                <ul>
+                    <li><a class="page-numbers" href="#">01</a></li>
+                    <li><a class="page-numbers" href="#">02</a></li>
+                    <li><a class="page-numbers" href="#">03</a></li>
+                    <li><a class="page-numbers" href="#"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+      <!-- Cta Section   S T A R T -->
+      <section class="cta-section clearfix">
+        <div class="container">
+            <div class="cta-wrap style1 fix">
+                <div class="shape"><img src="assets/img/shape/ctaShape1_1.png" alt="shape"></div>
+                <div class="row gy-5">
+                    <div class="col-xl-3">
+                        <div class="cta-thumb img-custom-anim-left wow fadeInUp" data-wow-delay=".4s">
+                            <img src="assets/img/cta/ctaThumb1_1.png" alt="thumb">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 d-flex align-items-center">
+                        <div class="section-title">
+                            <div class="subtitle"> <img src="assets/img/icon/arrowLeftWhite.svg" alt="icon"> <span
+                                    class="text-white">Schedule a Free Consultation
+                                </span><img src="assets/img/icon/arrowRightWhite.svg" alt="icon"></div>
+                            <p class="text-white">Encourage visitors to engage further with a clear CTA: <b> "Discover How We Can Transform Your
+                                Business."</b> Include buttons like:
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 d-flex align-items-center">
+                        <div class="btn-wrapper">
+                            <a class="gt-btn style5" href="#"> Request a Custom Solution
+                                <i class="fa-sharp fa-regular fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section   S T A R T -->
+    <section class="testimonial-section space pb-0 fix wow fadeInUp" data-wow-delay=".5s"
+        data-bg-src="assets/img/bg/testimonialBg1_1.png">
+        <div class="testimonial-wrap style3 space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="section-title title-area mb-50 mx-auto">
+                            <div class="subtitle d-flex justify-content-center"> <img
+                                    src="assets/img/icon/arrowLeft.svg" alt="icon"> <span> Testimonials
+                                </span><img src="assets/img/icon/arrowRight.svg" alt="icon"></div>
+                            <h2 class="title text-center">Our Latest Client Feedback</h2>
+                            <p style="color: #ffffff;">Our clients' success stories speak volumes about the impact of Stentor AI's solutions. Here's what they have to say:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div style="z-index: 2; position: relative;" class="slider-area">
+                    <div class="swiper gt-slider testimonial-slider3" id="testimonialSlider3"
+                        data-slider-options='{"loop": true,"centeredSlides":true, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1},"768":{"slidesPerView":1},"992":{"slidesPerView":2},"1200":{"slidesPerView":3}}}'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-card style3 img-custom-anim-left wow fadeInUp"
+                                    data-wow-delay=".4s">
+                                    <ul class="star-wrap">
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIconRegular.png" alt="icon"></li>
+                                    </ul>
+                                    <p class="text">"Stentor AI's automation tools saved us 30% in operational costs while boosting efficiency by 50%. Truly a game-changer!"
+                                    </p>
+                                    <div class="profile-box">
+                                        <div class="testi-thumb">
+                                            <img src="assets/img/testimonial/testiThumb3_1.png" alt="thumb">
+                                        </div>
+                                        <div class="testi-content">
+                                            <h3 class="title">Kristin Watson</h3>
+                                            <div class="designation">Managing Director</div>
+                                        </div>
+                                    </div>
+                                    <div class="quote">
+                                        <img class="darkQuote" src="assets/img/icon/quoteIconDark.png" alt="icon">
+                                        <img class="whiteQuote" src="assets/img/icon/quoteIconWhite.png" alt="icon">
+                                    </div>
+                                    <div class="shape3_1"><img src="assets/img/shape/testimonialShape3_1.png"
+                                            alt="shape">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card style3 img-custom-anim-left wow fadeInUp"
+                                    data-wow-delay=".4s">
+                                    <ul class="star-wrap">
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIconRegular.png" alt="icon"></li>
+                                    </ul>
+                                    <p class="text">"Thanks to Stentor AI's predictive analytics, we reduced inventory waste by 25% and increased sales by 18%. The results have been phenomenal!"
+                                    </p>
+                                    <div class="profile-box">
+                                        <div class="testi-thumb">
+                                            <img src="assets/img/testimonial/testiThumb3_2.png" alt="thumb">
+                                        </div>
+                                        <div class="testi-content">
+                                            <h3 class="title">Theresa Webb</h3>
+                                            <div class="designation">COO</div>
+                                        </div>
+                                    </div>
+                                    <div class="quote">
+                                        <img class="darkQuote" src="assets/img/icon/quoteIconDark.png" alt="icon">
+                                        <img class="whiteQuote" src="assets/img/icon/quoteIconWhite.png" alt="icon">
+                                    </div>
+                                    <div class="shape3_1"><img src="assets/img/shape/testimonialShape3_1.png"
+                                            alt="shape">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card style3 img-custom-anim-left wow fadeInUp"
+                                    data-wow-delay=".4s">
+                                    <ul class="star-wrap">
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIconRegular.png" alt="icon"></li>
+                                    </ul>
+                                    <p class="text">"The AI-powered scheduling system from Stentor AI transformed our patient management. We saw a 40% decrease in no-shows and a significant boost in revenue."
+                                    </p>
+                                    <div class="profile-box">
+                                        <div class="testi-thumb">
+                                            <img src="assets/img/testimonial/testiThumb3_3.png" alt="thumb">
+                                        </div>
+                                        <div class="testi-content">
+                                            <h3 class="title">Ronald Richards</h3>
+                                            <div class="designation">Director</div>
+                                        </div>
+                                    </div>
+                                    <div class="quote">
+                                        <img class="darkQuote" src="assets/img/icon/quoteIconDark.png" alt="icon">
+                                        <img class="whiteQuote" src="assets/img/icon/quoteIconWhite.png" alt="icon">
+                                    </div>
+                                    <div class="shape3_1"><img src="assets/img/shape/testimonialShape3_1.png"
+                                            alt="shape">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card style3 img-custom-anim-left wow fadeInUp"
+                                    data-wow-delay=".4s">
+                                    <ul class="star-wrap">
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIconRegular.png" alt="icon"></li>
+                                    </ul>
+                                    <p class="text">"Implementing Stentor AI's solutions has been one of the best decisions for our business. We achieved real-time insights and a 20% improvement in delivery efficiency."
+                                    </p>
+                                    <div class="profile-box">
+                                        <div class="testi-thumb">
+                                            <img src="assets/img/testimonial/testiThumb3_1.png" alt="thumb">
+                                        </div>
+                                        <div class="testi-content">
+                                            <h3 class="title">Kristin Watson</h3>
+                                            <div class="designation">Operations Manager</div>
+                                        </div>
+                                    </div>
+                                    <div class="quote">
+                                        <img class="darkQuote" src="assets/img/icon/quoteIconDark.png" alt="icon">
+                                        <img class="whiteQuote" src="assets/img/icon/quoteIconWhite.png" alt="icon">
+                                    </div>
+                                    <div class="shape3_1"><img src="assets/img/shape/testimonialShape3_1.png"
+                                            alt="shape">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card style3 img-custom-anim-left wow fadeInUp"
+                                    data-wow-delay=".4s">
+                                    <ul class="star-wrap">
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIcon2.png" alt="icon"></li>
+                                        <li><img src="assets/img/icon/starIconRegular.png" alt="icon"></li>
+                                    </ul>
+                                    <p class="text">"Stentor AI didn't just optimize our processes—it gave us a competitive edge. Their team is fantastic, and the results exceeded our expectations."
+                                    </p>
+                                    <div class="profile-box">
+                                        <div class="testi-thumb">
+                                            <img src="assets/img/testimonial/testiThumb3_2.png" alt="thumb">
+                                        </div>
+                                        <div class="testi-content">
+                                            <h3 class="title">Theresa Web</h3>
+                                            <div class="designation">CEO</div>
+                                        </div>
+                                    </div>
+                                    <div class="quote">
+                                        <img class="darkQuote" src="assets/img/icon/quoteIconDark.png" alt="icon">
+                                        <img class="whiteQuote" src="assets/img/icon/quoteIconWhite.png" alt="icon">
+                                    </div>
+                                    <div class="shape3_1"><img src="assets/img/shape/testimonialShape3_1.png"
+                                            alt="shape">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="slider-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<< Footer Section Start >>-->
+    <footer class="footer-section pt-100 footer-bg">
+        <div class="container">
+            <div style="z-index: 2; position: relative;" class="contact-info-area">
+                <div class="contact-info-items wow fadeInUp" data-wow-delay=".7s">
+                    <div class="icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 1.6665C11.036 1.6665 7 5.7385 7 10.7612C7 12.4625 7.74933 14.5732 8.84 16.6785C11.2413 21.3145 15.2413 25.9838 15.2413 25.9838C15.3352 26.0932 15.4516 26.1809 15.5826 26.2411C15.7135 26.3012 15.8559 26.3324 16 26.3324C16.1441 26.3324 16.2865 26.3012 16.4174 26.2411C16.5484 26.1809 16.6648 26.0932 16.7587 25.9838C16.7587 25.9838 20.7587 21.3145 23.16 16.6785C24.2507 14.5732 25 12.4625 25 10.7612C25 5.7385 20.964 1.6665 16 1.6665ZM16 6.99984C15.0447 7.0256 14.1371 7.42322 13.4705 8.10804C12.8039 8.79286 12.4309 9.71081 12.4309 10.6665C12.4309 11.6222 12.8039 12.5401 13.4705 13.225C14.1371 13.9098 15.0447 14.3074 16 14.3332C16.9553 14.3074 17.8629 13.9098 18.5295 13.225C19.1961 12.5401 19.5691 11.6222 19.5691 10.6665C19.5691 9.71081 19.1961 8.79286 18.5295 8.10804C17.8629 7.42322 16.9553 7.0256 16 6.99984Z"
+                                fill="#3C72FC" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.3788 23.1693C23.4628 23.4946 24.3562 23.8973 24.9735 24.3693C25.3735 24.6733 25.6668 24.9706 25.6668 25.3333C25.6668 25.5466 25.5455 25.74 25.3748 25.9333C25.0922 26.252 24.6722 26.5386 24.1522 26.8053C22.3148 27.7453 19.3442 28.3333 16.0002 28.3333C12.6562 28.3333 9.6855 27.7453 7.84816 26.8053C7.32816 26.5386 6.90816 26.252 6.6255 25.9333C6.45483 25.74 6.3335 25.5466 6.3335 25.3333C6.3335 24.9706 6.62683 24.6733 7.02683 24.3693C7.64416 23.8973 8.5375 23.4946 9.6215 23.1693C9.87557 23.0929 10.0889 22.9187 10.2146 22.6851C10.3402 22.4514 10.3679 22.1774 10.2915 21.9233C10.2151 21.6692 10.0409 21.4559 9.80726 21.3302C9.57359 21.2046 9.29957 21.1769 9.0455 21.2533C7.39483 21.7506 6.11216 22.432 5.3415 23.1853C4.66416 23.8453 4.3335 24.584 4.3335 25.3333C4.3335 26.2693 4.86283 27.2026 5.93883 27.9813C7.82683 29.3466 11.6188 30.3333 16.0002 30.3333C20.3815 30.3333 24.1735 29.3466 26.0615 27.9813C27.1375 27.2026 27.6668 26.2693 27.6668 25.3333C27.6668 24.584 27.3362 23.8453 26.6588 23.1853C25.8882 22.432 24.6055 21.7506 22.9548 21.2533C22.829 21.2155 22.697 21.2028 22.5663 21.216C22.4356 21.2292 22.3088 21.268 22.1931 21.3302C22.0774 21.3925 21.9751 21.4769 21.892 21.5786C21.8089 21.6804 21.7467 21.7975 21.7088 21.9233C21.671 22.0491 21.6583 22.1811 21.6715 22.3118C21.6847 22.4425 21.7236 22.5694 21.7858 22.6851C21.848 22.8008 21.9324 22.9031 22.0341 22.9862C22.1359 23.0692 22.253 23.1315 22.3788 23.1693Z"
+                                fill="#3C72FC" />
+                        </svg>
+
+                    </div>
+                    <div class="content">
+                        <p>Address</p>
+                        <h3>
+                            88 Queens Quay West, Suite 2500,RBC WaterPark Place,Toronto, M5J 0B8, CAN
+                        </h3>
+                    </div>
+                </div>
+                <div class="contact-info-items wow fadeInUp" data-wow-delay=".5s">
+                    <div class="icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.6498 10.8272C12.8023 10.914 12.976 10.9569 13.1514 10.9509C13.3312 10.9344 13.5053 10.8798 13.6623 10.7906L24.9217 4.22062C24.677 3.79416 24.3245 3.43955 23.8994 3.19239C23.4744 2.94523 22.9918 2.81422 22.5001 2.8125H3.75014C3.2583 2.81406 2.77554 2.94499 2.35032 3.19216C1.9251 3.43932 1.5724 3.79402 1.32764 4.22062L12.6498 10.8272Z"
+                                fill="#3C72FC" />
+                            <path
+                                d="M25.3125 6.15918V12.6748C24.4104 12.3501 23.4587 12.1852 22.5 12.1873C20.2633 12.1908 18.1192 13.0808 16.5376 14.6624C14.956 16.244 14.066 18.3881 14.0625 20.6248C14.0623 20.9382 14.0811 21.2512 14.1188 21.5623H3.75C3.00476 21.5601 2.29069 21.263 1.76372 20.7361C1.23676 20.2091 0.939726 19.495 0.9375 18.7498V6.15918L11.7094 12.4498C12.1434 12.6872 12.6303 12.8116 13.125 12.8116C13.6197 12.8116 14.1066 12.6872 14.5406 12.4498L25.3125 6.15918Z"
+                                fill="#3C72FC" />
+                            <path
+                                d="M22.5 14.0625C20.7595 14.0625 19.0903 14.7539 17.8596 15.9846C16.6289 17.2153 15.9375 18.8845 15.9375 20.625C15.9375 22.3655 16.6289 24.0347 17.8596 25.2654C19.0903 26.4961 20.7595 27.1875 22.5 27.1875C22.7486 27.1875 22.9871 27.0887 23.1629 26.9129C23.3387 26.7371 23.4375 26.4986 23.4375 26.25C23.4375 26.0014 23.3387 25.7629 23.1629 25.5871C22.9871 25.4113 22.7486 25.3125 22.5 25.3125C21.5729 25.3125 20.6666 25.0376 19.8958 24.5225C19.1249 24.0074 18.5241 23.2754 18.1693 22.4188C17.8145 21.5623 17.7217 20.6198 17.9026 19.7105C18.0834 18.8012 18.5299 17.966 19.1854 17.3104C19.841 16.6549 20.6762 16.2084 21.5855 16.0276C22.4948 15.8467 23.4373 15.9395 24.2938 16.2943C25.1504 16.6491 25.8824 17.2499 26.3975 18.0208C26.9126 18.7916 27.1875 19.6979 27.1875 20.625V21.5625C27.1875 21.8111 27.0887 22.0496 26.9129 22.2254C26.7371 22.4012 26.4986 22.5 26.25 22.5C26.0014 22.5 25.7629 22.4012 25.5871 22.2254C25.4113 22.0496 25.3125 21.8111 25.3125 21.5625V20.625C25.3125 20.0687 25.1476 19.525 24.8385 19.0625C24.5295 18.5999 24.0902 18.2395 23.5763 18.0266C23.0624 17.8137 22.4969 17.758 21.9513 17.8665C21.4057 17.9751 20.9046 18.2429 20.5113 18.6363C20.1179 19.0296 19.8501 19.5307 19.7415 20.0763C19.633 20.6219 19.6887 21.1874 19.9016 21.7013C20.1145 22.2152 20.4749 22.6545 20.9375 22.9635C21.4 23.2726 21.9437 23.4375 22.5 23.4375C22.9843 23.4344 23.4594 23.3048 23.8781 23.0616C24.2022 23.578 24.6856 23.9748 25.2552 24.1921C25.8248 24.4094 26.4496 24.4353 27.0353 24.266C27.621 24.0967 28.1356 23.7412 28.5013 23.2535C28.867 22.7657 29.064 22.1721 29.0625 21.5625V20.625C29.0605 18.8851 28.3685 17.2171 27.1382 15.9868C25.9079 14.7565 24.2399 14.0645 22.5 14.0625ZM22.5 21.5625C22.3146 21.5625 22.1333 21.5075 21.9792 21.4045C21.825 21.3015 21.7048 21.1551 21.6339 20.9838C21.5629 20.8125 21.5443 20.624 21.5805 20.4421C21.6167 20.2602 21.706 20.0932 21.8371 19.9621C21.9682 19.831 22.1352 19.7417 22.3171 19.7055C22.499 19.6693 22.6875 19.6879 22.8588 19.7589C23.0301 19.8298 23.1765 19.95 23.2795 20.1042C23.3825 20.2583 23.4375 20.4396 23.4375 20.625C23.4375 20.8736 23.3387 21.1121 23.1629 21.2879C22.9871 21.4637 22.7486 21.5625 22.5 21.5625Z"
+                                fill="#3C72FC" />
+                        </svg>
+                    </div>
+                    <div class="content">
+                        <p>Send Email</p>
+                        <h3>
+                            <a href="mailto:info@stentor.ai">info@stentor.ai</a>
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="widget-area style1 footer-bg pb-80">
+            <div class="container">
+                <div class="footer-layout style1">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
+                                <div style="z-index: 2; position: relative;" class="gt-widget-about">
+                                    <div class="about-logo">
+                                        <a href="index.html"><img src="assets/img/footer-logo.png" alt="Stentor AI"></a>
+                                    </div>
+                                    <p class="about-text"> Welcome to Stentor AI—your gateway to innovative,
+                                        cost-efficient technology
+                                        solutions.
+                                    </p>
+                                    <div class="gt-social style2">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.twitter.com/"><i class="fa fa-x"></i></a>
+                                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-12">
+                            <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1s">
+                                <h3 style="z-index: 2; position: relative;" class="widget_title">Quick Links</h3>
+                                <div style="z-index: 2; position: relative;" class="menu-all-pages-container">
+                                    <ul class="menu">
+                                        <li><a href="about.html"><i class="fa-solid fa-chevrons-right"></i>Stentor AI
+                                                About</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa-solid fa-chevrons-right"></i>Our Services</a>
+                                        </li>
+                                        <li><a href="case-studies.html"><i class="fa-solid fa-chevrons-right"></i>Case
+                                                Studies</a></li>
+
+                                        <li><a href="blog.html"><i class="fa-solid fa-chevrons-right"></i>Our Blogs</a>
+                                        </li>
+                                        <li><a href="contact.html"><i class="fa-solid fa-chevrons-right"></i>Contact
+                                                Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="widget footer-widget wow fadeInUp" data-wow-delay="1.3s">
+                                <h3 style="z-index: 2; position: relative;" class="widget_title">Recent Posts</h3>
+                                <div style="z-index: 2; position: relative;" class="recent-post-wrap">
+                                    <div class="recent-post">
+                                        <div class="media-img">
+                                            <a href="#"><img src="assets/img/footer/footerThumb1_1.png" alt="thumb"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="recent-post-meta">
+                                                <a href="#"><img src="assets/img/icon/calendarIcon.svg" alt="icon">9th
+                                                    Jan, 2025</a>
+                                            </div>
+                                            <h4 class="post-title"><a class="text-inherit" href="#">Top
+                                                    "No Net Cost" approach</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="recent-post">
+                                        <div class="media-img">
+                                            <a href="#"><img src="assets/img/footer/footerThumb1_2.png" alt="thumb"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="recent-post-meta">
+                                                <a href="#"><img src="assets/img/icon/calendarIcon.svg" alt="icon">9th
+                                                    Jan, 2025</a>
+                                            </div>
+                                            <h4 class="post-title"><a class="text-inherit" href="#">The
+                                                    Innovative technology solutions</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.6s">
+                                <h3 style="z-index: 2; position: relative;" class="widget_title">Contact Us</h3>
+                                <div style="z-index: 2; position: relative;" class="checklist style2">
+                                    <ul class="ps-0">
+                                        <li class="text-white"><i class="fa-solid fa-envelope"></i></li>
+                                        <li class="text-white">info@stentor.ai</li>
+                                    </ul>
+                                    <div class="email-input-container">
+                                        <input type="email" id="email" placeholder="Your email address" required="">
+                                        <button type="submit" id="submitButton" disabled=""><i
+                                                class="fa-regular fa-arrow-right-long"></i></button>
+                                    </div>
+                                    <form id="termsForm">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="agree" id="agreeCheckbox">
+                                            <span class="checkmark"></span>
+                                            I agree to the <a class="text-underline" href="#" target="_blank">Privacy
+                                                Policy.</a>
+                                        </label>
+                                        <br>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="z-index: 2; position: relative;" class="copyright-wrap bg-theme">
+            <div class="container">
+                <div class="copyright-layout">
+                    <div class="layout-text wow fadeInUp" data-wow-delay=".3s">
+                        <p class="copyright">
+                            <i class="fal fa-copyright"></i> All Copyright 2025 by <a href="index.html">Stentor AI</a>
+                        </p>
+                    </div>
+                    <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
+                        <div class="link-wrapper">
+                            <a href="#">Terms &amp; Condition </a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/smoke.js"></script>
+    
+    <div id="test-popup" class="white-popup mfp-hide">
+        <div class="text-right modal-close"><i class="fa-solid fa-times"></i></div>
+        <h3>Real Businesses, Real Results </h3>
+        <p>At Stentor AI, we are revolutionizing industries with our innovative "No Net Cost" solutions, designed to maximize results without straining budgets. Our approach not only delivers measurable outcomes but also empowers businesses to thrive in competitive markets. Below, we highlight success stories that demonstrate the transformative impact of our solutions.</p>
+        <h6>Client Name: Horizon Logistics </h6>
+        <p><b>Industry:</b> Transportation and Supply Chain </p>
+        <p><b>Challenge: </b></p>
+        <p>Horizon Logistics faced inefficiencies in route optimization, leading to increased fuel costs and delayed deliveries, which affected customer satisfaction and profitability. </p>
+        <p><b>Solution: </b></p>
+        <p>Stentor AI implemented an AI-driven logistics platform to optimize delivery routes, predict maintenance needs, and enhance fleet management. This solution integrated seamlessly into their operations, requiring minimal upfront investment. </p>
+        <p><b>Results: </b></p>
+        <ul class="text-dark">
+            <li>30% reduction in fuel costs through optimized routes. </li>
+            <li>20% improvement in delivery times, boosting customer satisfaction scores. </li>
+            <li>15% increase in operational efficiency, driving profitability.</li>
+        </ul>
+      </div>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('.open-popup-link').magnificPopup({
+  type: 'inline',
+  midClick: true,
+  mainClass: 'mfp-fade'
+});
+    </script>
+</body>
+
+</html>
