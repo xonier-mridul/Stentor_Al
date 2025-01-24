@@ -27,7 +27,7 @@ Version: 1.0.0
   --bg3: #ffffff33;
   --title-color: #0F0D1D;
   --header: #0F0D1D;
-  --body-color: #ffffff;
+  --body-color: #000000;
   --smoke-color: #F3F7FB;
   --smoke-color2: #CFD3FC;
   --smoke-color3: #F7F7F7;
@@ -14738,4 +14738,8 @@ canvas {
   -moz-transform: scale(1.08);
   -ms-transform: scale(1.08);
   -o-transform: scale(1.08);
+}
+
+.map-height{
+  height: 580px !important;
 }

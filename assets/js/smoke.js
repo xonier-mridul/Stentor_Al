@@ -51,7 +51,6 @@ support_linear_float = gl.getExtension("OES_texture_float_linear");
 gl.clearColor(0, 0, 0, 0.1);
 
 
-
 var internalFormat = isWebGL2 ? gl.RGBA16F : gl.RGBA;
 var internalFormatRG = isWebGL2 ? gl.RG16F : gl.RGBA;
 var formatRG = isWebGL2 ? gl.RG : gl.RGBA;
@@ -106,8 +105,7 @@ for (var i = 0; i < uniformCount; i++) {
     this.program,
     uniformName
   );
-}
-}
+}}
 
 GLProgram.prototype.bind = function bind() {
 gl.useProgram(this.program);
