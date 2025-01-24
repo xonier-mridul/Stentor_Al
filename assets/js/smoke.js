@@ -114,6 +114,7 @@ gl.useProgram(this.program);
 return GLProgram;
 })();
 
+
 function compileShader(type, source) {
 var shader = gl.createShader(type);
 
@@ -294,12 +295,12 @@ get second() {
 },
 swap: function swap() {
   var temp = fbo1;
-
+  
   fbo1 = fbo2;
   fbo2 = temp;
 }
 };
-}
+};
 
 var blit = (function () {
 gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
